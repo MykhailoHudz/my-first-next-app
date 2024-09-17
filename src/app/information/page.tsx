@@ -1,5 +1,7 @@
+import InformationSection from "@/components/InformationSection/InformationSection";
+
 function InformationPage() {
-  return <div>Information Page</div>;
+  return <InformationSection />;
 }
 
 export default InformationPage;

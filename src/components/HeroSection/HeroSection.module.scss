@@ -1,0 +1,17 @@
+@import "../../app/styles/constants.scss";
+
+.description {
+  text-align: center;
+  font-size: 14px;
+
+  .link {
+    display: inline-block;
+    text-decoration: underline;
+
+    transition: transform 150ms linear;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}

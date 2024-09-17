@@ -1,6 +1,6 @@
 import "./globals.css";
 import Link from "next/link";
-import styles from "./page.module.scss";
+import styles from "./styles/page.module.scss";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -12,9 +12,15 @@ export default function RootLayout({
         <header className={styles.header}>
           <div className={styles.container}>
             <nav className={styles.navigation}>
-              <Link href={"/"}>Home Page</Link>
-              <Link href={"/information"}>Information Page</Link>
-              <Link href={"/team"}>Team Page</Link>
+              <Link className={styles.link} href={"/"}>
+                Home
+              </Link>
+              <Link className={styles.link} href={"/information"}>
+                Information
+              </Link>
+              <Link className={styles.link} href={"/team"}>
+                Team
+              </Link>
             </nav>
           </div>
         </header>

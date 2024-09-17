@@ -1,5 +1,7 @@
+import TeamSection from "@/components/TeamSection/TeamSection";
+
 function TeamPage() {
-  return <div>Team Page</div>;
+  return <TeamSection />;
 }
 
 export default TeamPage;
