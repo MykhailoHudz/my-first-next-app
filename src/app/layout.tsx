@@ -21,6 +21,9 @@ export default function RootLayout({
               <Link className={styles.link} href={"/team"}>
                 Team
               </Link>
+              <Link className={styles.link} href={"/comments"}>
+                Comments
+              </Link>
             </nav>
           </div>
         </header>
