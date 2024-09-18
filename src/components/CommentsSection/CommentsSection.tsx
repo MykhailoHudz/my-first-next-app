@@ -21,7 +21,11 @@ async function CommentsSection() {
         <h1 className={generalStyles.main_title}>Comments</h1>
         <ul className={styles.comments_list}>
           {comments?.map((comment: TypeComment) => (
-            <CommentsListItem id={comment.id} body={comment.body} />
+            <CommentsListItem
+              id={comment.id}
+              body={comment.body}
+              key={comment.id}
+            />
           ))}
         </ul>
       </div>

@@ -1,0 +1,71 @@
+@import "../../app/styles//mixins/breakpoints.scss";
+@import "../../app/styles/constants.scss";
+.header {
+  width: 100%;
+  border-bottom: 1px solid $black-color;
+  padding: 20px 0px;
+  margin-bottom: 30px;
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navigation {
+    display: none;
+    gap: 10px;
+
+    @include breakpoint(tablet) {
+      display: flex;
+      gap: 30px;
+    }
+
+    .link {
+      border: 1px solid $accent-red-color;
+      border-radius: 15px;
+      padding: 5px 15px;
+
+      transition: all 150ms linear;
+
+      &:hover,
+      &:focus {
+        scale: 1.1;
+        transform: translateY(-3px);
+        color: $accent-red-color;
+      }
+    }
+  }
+
+  .mobile__navigation {
+    position: relative;
+    @include breakpoint(tablet) {
+      display: none;
+    }
+
+    .menu_btn {
+      border: 1px solid $accent-red-color;
+      border-radius: 15px;
+      padding: 5px 15px;
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+
+      padding: 10px;
+      background-color: $main-background-color;
+      border: 5px solid $white-color;
+      border-radius: 20px;
+      box-shadow: $shadow-color 0px 30px 90px;
+
+      position: absolute;
+      top: 35px;
+      left: -25%;
+    }
+  }
+}
