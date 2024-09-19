@@ -1,9 +1,13 @@
-import { render, fireEvent, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import MobileMenu from "../MobileMenu";
 
-test("matches snapshot", () => {
-  const { asFragment } = render(<MobileMenu />);
+// const additionalConstant = 15;
+// const additionalConstant2 = 15;
+// const additionalConstant3 = 15;
 
-  expect(asFragment()).toMatchSnapshot();
+test("matches snapshot", () => {
+    const { asFragment } = render(<MobileMenu />);
+
+    expect(asFragment()).toMatchSnapshot();
 });
