@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <li>
+    <p>
+      <span
+        class="list_number"
+      >
+        131. 
+      </span>
+      rem magnam at voluptatem
+aspernatur et et nostrum rerum
+dignissimos eum quibusdam
+optio quod dolores et...
+    </p>
+  </li>
+</DocumentFragment>
+`;
