@@ -14,3 +14,54 @@ exports[`matches snapshot 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`matches snapshot 2`] = `
+<DocumentFragment>
+  <div
+    class="mobile__navigation"
+  >
+    <button
+      class="menu_btn"
+      type="button"
+    >
+      Menu
+    </button>
+    <ul
+      class="list"
+    >
+      <li>
+        <a
+          class="link"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          class="link"
+          href="/information"
+        >
+          Information
+        </a>
+      </li>
+      <li>
+        <a
+          class="link"
+          href="/team"
+        >
+          Team
+        </a>
+      </li>
+      <li>
+        <a
+          class="link"
+          href="/comments"
+        >
+          Comments
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

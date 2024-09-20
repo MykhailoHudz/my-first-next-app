@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import MobileMenu from "../MobileMenu";
 
@@ -8,6 +8,11 @@ import MobileMenu from "../MobileMenu";
 
 test("matches snapshot", () => {
     const { asFragment } = render(<MobileMenu />);
+
+    expect(asFragment()).toMatchSnapshot();
+
+    const button = screen.getByRole("button", { name: /menu/i });
+    fireEvent.click(button);
 
     expect(asFragment()).toMatchSnapshot();
 });
